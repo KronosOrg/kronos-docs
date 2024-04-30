@@ -25,9 +25,9 @@ spec:
       excludeRef: ""
 ```
 
-This schedule will put all included resources, in this case, all deployments in the default namespace, to sleep at 6 pm CET and wake them up at 7 am CET. For more advanced use cases, please consult the **[Examples](http://localhost:3000/docs/examples)** page.
+This schedule will put all included resources, in this case, all deployments in the default namespace, to sleep at 6 pm CET and wake them up at 7 am CET. For more advanced use cases, please consult the **[Examples](./examples.md)** page.
 
-To learn more about the fields and the available customization options for the CRD, please refer to this **[CRD Configuration](http://localhost:3000/docs/crd-configuration)** page, where we explain how to configure your schedule correctly based on your requirements.
+To learn more about the fields and the available customization options for the CRD, please refer to this **[CRD Configuration](./crd-configuration.md)** page, where we explain how to configure your schedule correctly based on your requirements.
 
 ## Under The Hood 
 
