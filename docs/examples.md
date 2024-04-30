@@ -28,6 +28,7 @@ spec:
 
 ## Intermediate Configuration: Using inclusion and exclusion
 **Scenario:** You want to schedule `Deployments` , except those who has `prod` in their name, in the default namespace to sleep from 6 pm to 8 am every day.
+
 **Configuration:**
 ```yaml
 apiVersion: core.wecraft.tn/v1alpha1
@@ -155,6 +156,7 @@ spec:
 
 ## Legendary Configuration: 
 **Scenario:** Honestly, too legendary for me to explain. Just know that you can define the `KronosApp` like the following:
+
 **Configuration:**
 ```yaml
 apiVersion: core.wecraft.tn/v1alpha1
