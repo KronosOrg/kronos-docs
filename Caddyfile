@@ -1,7 +1,0 @@
-krono-docs.infra.wecraft.tn{
-  root * /var/docusaurus
-  encode gzip
-  try_files {path} /index.html
-  file_server
-  email: admin@wecraft.tn
-}
