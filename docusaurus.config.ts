@@ -72,7 +72,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/KronosOrg/kronos-core',
           label: 'GitHub',
           position: 'right',
         },
@@ -85,9 +85,25 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Getting Started',
               to: '/docs/intro',
             },
+            {
+              label: 'How It Works',
+              to: '/docs/how-it-works',
+            },
+            {
+              label: 'Installation Steps',
+              to: '/docs/installation-steps',
+            },
+            {
+              label: 'CRD Configuration',
+              to: '/docs/crd-configuration',
+            },
+            {
+              label: 'Examples',
+              to: '/docs/examples',
+            }
           ],
         },
         {
@@ -116,7 +132,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/KronosOrg/kronos-core',
             },
           ],
         },

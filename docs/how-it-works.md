@@ -7,7 +7,7 @@ sidebar_position: 2
 To use Kronos, users first define their resource scheduling requirements using a Custom Resource Definition (CRD) provided by Kronos called **KronosApp**. The CRD allows users to specify their schedules in a structured format that Kronos understands and can act upon. Here's a simple example of how a CRD for Kronos might look:
 
 ```yaml 
-apiVersion: core.wecraft.tn/v1beta1
+apiVersion: core.wecraft.tn/v1alpha1
 kind: KronosApp
 metadata:
   labels:
