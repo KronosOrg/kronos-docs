@@ -19,8 +19,8 @@ spec:
   weekdays: "1..5"
   timezone: "Africa/Tunis"
   includedObjects: 
-    - apiVersion: ""
-      kind: ""
+    - apiVersion: "*"
+      kind: "*"
       namespace: "default"
       includeRef: ""
       excludeRef: ""
@@ -65,7 +65,7 @@ spec:
   timezone: "Africa/Tunis"
   includedObjects: 
     - apiVersion: "apps/v1"
-      kind: ""
+      kind: "*"
       namespace: "default"
       includeRef: ""
       excludeRef: ""
@@ -92,7 +92,7 @@ spec:
       date: "2024-12-25"
   includedObjects: 
     - apiVersion: "apps/v1"
-      kind: ""
+      kind: "*"
       namespace: "default"
       includeRef: ""
       excludeRef: ""
@@ -114,8 +114,8 @@ spec:
   weekdays: "1-3-5..7"
   timezone: "Africa/Tunis"
   includedObjects: 
-    - apiVersion: ""
-      kind: ""
+    - apiVersion: "*"
+      kind: "*"
       namespace: "default"
       includeRef: ""
       excludeRef: ""
@@ -143,7 +143,7 @@ spec:
       date: "2024-12-25"
   includedObjects: 
     - apiVersion: "apps/v1"
-      kind: ""
+      kind: "*"
       namespace: "default"
       includeRef: ""
       excludeRef: ".*prod.*"
