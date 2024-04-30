@@ -3,7 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-  title: 'Kronos',
+  title: 'Kronos Documentation',
   tagline: 'Go Green! Save Cost!',
   favicon: 'img/favicon.ico',
 

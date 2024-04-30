@@ -32,7 +32,7 @@ export default function Home(): JSX.Element {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={siteConfig.title}
       description="Kronos Software Suite Documentation">
       <HomepageHeader />
       <main>
