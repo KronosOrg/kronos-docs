@@ -60,7 +60,7 @@ const config: Config = {
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/kronos-card.jpg',
+    image: 'img/kronos-card.png',
     navbar: {
       title: 'Kronos',
       logo: {
