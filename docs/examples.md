@@ -84,6 +84,7 @@ spec:
   startSleep: "18:00"
   endSleep: "08:00"
   weekdays: "1..7"
+  # Alternatively, you can use "*" to include all week days.
   timezone: "America/New_York"
   holidays:
     - name: "Thanksgiving"
