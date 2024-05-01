@@ -14,7 +14,7 @@ By dynamically allocating resources based on real-time demand, organizations can
 
 ## What is Kronos ?
 
-Kronos is an kubernetes Operator designed to facilitate the scheduling of resource wake and sleep cycles in a Kubernetes environment. It boasts a comprehensive set of features that allow users to selectively choose which resources to schedule, offering a high level of flexibility and control. 
+Kronos is a kubernetes Operator designed to facilitate the scheduling of resource wake and sleep cycles in a Kubernetes environment. It boasts a comprehensive set of features that allow users to selectively choose which resources to schedule, offering a high level of flexibility and control. 
 Kronos also has the ability to integrate seamlessly with the command-line interface (CLI) Kronos-CLI, enabling users to instantly wake or sleep resources as needed.
 
 ### Cherry Picking 
