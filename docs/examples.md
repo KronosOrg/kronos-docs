@@ -16,7 +16,7 @@ metadata:
 spec:
   startSleep: "18:00"
   endSleep: "08:00"
-  weekdays: "1..5"
+  weekdays: "1-5"
   timezone: "Africa/Tunis"
   includedObjects: 
     - apiVersion: "*"
@@ -39,7 +39,7 @@ metadata:
 spec:
   startSleep: "18:00"
   endSleep: "08:00"
-  weekdays: "1..7"
+  weekdays: "1-7"
   timezone: "Africa/Tunis"
   includedObjects: 
     - apiVersion: "apps/v1"
@@ -61,7 +61,7 @@ metadata:
 spec:
   startSleep: "18:00"
   endSleep: "08:00"
-  weekdays: "1..7"
+  weekdays: "1-7"
   timezone: "Africa/Tunis"
   includedObjects: 
     - apiVersion: "apps/v1"
@@ -83,7 +83,7 @@ metadata:
 spec:
   startSleep: "18:00"
   endSleep: "08:00"
-  weekdays: "1..7"
+  weekdays: "1-7"
   # Alternatively, you can use "*" to include all week days.
   timezone: "America/New_York"
   holidays:
@@ -112,7 +112,7 @@ metadata:
 spec:
   startSleep: "18:00"
   endSleep: "08:00"
-  weekdays: "1-3-5..7"
+  weekdays: "1,3,5-7"
   timezone: "Africa/Tunis"
   includedObjects: 
     - apiVersion: "*"
@@ -135,7 +135,7 @@ metadata:
 spec:
   startSleep: "18:00"
   endSleep: "08:00"
-  weekdays: "1-3-5..7"
+  weekdays: "*"
   timezone: "America/New_York"
   holidays:
     - name: "Thanksgiving"
@@ -168,7 +168,7 @@ metadata:
 spec:
   startSleep: "18:00"
   endSleep: "08:00"
-  weekdays: "1-3-5..7"
+  weekdays: "1,3,5-7"
   timezone: "America/New_York"
   holidays:
     - name: "Thanksgiving"
