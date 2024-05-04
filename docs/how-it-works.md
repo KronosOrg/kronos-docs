@@ -15,7 +15,7 @@ metadata:
 spec:
   startSleep: "18:00"
   endSleep: "07:00"
-  weekdays: "1..5"
+  weekdays: "1-5"
   timezone: "Africa/Tunis"
   includedObjects: 
     - apiVersion: "apps/v1"
