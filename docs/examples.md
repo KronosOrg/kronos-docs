@@ -1,3 +1,7 @@
+---
+sidebar_position: 6
+---
+
 # Examples
 Welcome to the KronosApp CR Examples Page! Here, we provide various examples to demonstrate how you can configure the KronosApp Custom Resource (CR) for different scenarios. 
 
@@ -50,7 +54,7 @@ spec:
 ```
 
 ## Intermediate Configuration: Selective Object Scheduling
-**Scenario:** You want to schedule `Deployments` and `StatefulSets` in the default namespace to sleep from 6 pm to 8 am every day.
+**Scenario:** You want to schedule `Deployments`,`StatefulSets` and `ReplicaSets` in the default namespace to sleep from 6 pm to 8 am every day.
 **Configuration:**
 ```yaml
 apiVersion: core.wecraft.tn/v1alpha1
@@ -71,7 +75,7 @@ spec:
       excludeRef: ""
 ```
 ## Intermediate Configuration: Registering Holidays
-**Scenario:** You want to schedule `Deployments` and `StatefulSets` in the default namespace to sleep from 6 pm to 8 am every day in `New York` timezone and automatically sleep resources in the `Thanks Giving` and `Christmas` holiday.
+**Scenario:** You want to schedule `Deployments`,`StatefulSets` and `ReplicaSets` in the default namespace to sleep from 6 pm to 8 am every day in `New York` timezone and automatically sleep resources in the `Thanks Giving` and `Christmas` holiday.
 
 **Configuration:**
 ```yaml
@@ -123,7 +127,7 @@ spec:
 ```
 
 ## Advanced Configuration: Selective Object Scheduling with Inclusion and Exclusion
-**Scenario:** You want to schedule `Deployments` and `StatefulSets`, except those who has `prod` in their name, and `CronJobs` except a CronJob that is called "prod-health-check" in the default namespace to sleep from 6 pm to 8 am every day.
+**Scenario:** You want to schedule `Deployments`,`StatefulSets` and `ReplicaSets`, except those who has `prod` in their name, and `CronJobs` except a CronJob that is called "prod-health-check" in the default namespace to sleep from 6 pm to 8 am every day.
 
 **Configuration:**
 ```yaml

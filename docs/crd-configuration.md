@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # CRD Configuration
 
 The Kronos-Core Custom Resource Definition (CRD) allows users to define resource schedules for their Kubernetes clusters. The CRD manifest includes several fields that users can configure to customize their resource schedules. Here are the different fields in the manifest:

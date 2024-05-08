@@ -49,19 +49,5 @@ Waking up a **Replica-Based** resource means resetting the replicas of the resou
 Sleeping a **Status-based** resource can be achieved through various methods, but in the current version of Kronos, it involves suspending the resource. This suspension is typically done by setting a specific field (e.g., `suspended`) to *true*, indicating that the resource is inactive.
 Waking up a **Status-based** resource involves reversing the action taken during sleep. In this version of Kronos, waking up a status-based resource is done by setting the aforementioned field (e.g., `suspended`) to *false*, indicating that the resource is now active again.
 
-## Supported Resources:
-
-
-In its current version, Kronos supports three main types of resources: Deployments, StatefulSets, and CronJobs. Each of these resource types has specific characteristics and requirements for scheduling sleep and wake cycles.
-
-### Deployments
-Deployments are used to manage a replicated application, typically with multiple instances (pods) running concurrently.
-Kronos supports deployments by managing the replicas field in the Deployment spec. Sleeping a Deployment involves setting the replicas to 0, effectively stopping all instances of the application. Waking up a Deployment resets the replicas to their original number, allowing the application to start running again.
-### StatefulSets
-StatefulSets are similar to Deployments but are used for stateful applications that require stable and unique network identifiers.
-Kronos supports StatefulSets by managing the replicas field in the StatefulSet spec. Sleeping a StatefulSet involves setting the replicas to 0, stopping all instances of the application. Waking up a StatefulSet resets the replicas to their original number, allowing the application to resume its stateful operations.
-### CronJobs
-CronJobs are used to run scheduled tasks in a Kubernetes cluster, similar to cron jobs in a Unix-like environment.
-Kronos supports CronJobs by managing the schedule field in the CronJob spec. Sleeping a CronJob involves pausing the execution of scheduled tasks. Waking up a CronJob resumes the execution of tasks according to the defined schedule.
 
 Kronos is designed for extensibility, meaning it can support any type of resource that is replica-based (e.g., `Deployment`) or status-based (e.g., `CronJob`). This design allows Kronos to adapt to different types of applications and workload patterns, making it a versatile solution for resource scheduling in Kubernetes environments.
