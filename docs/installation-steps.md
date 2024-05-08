@@ -7,7 +7,7 @@ This section will guide you through the installation of both Kronos-Core, the Ku
 # Kronos-Core: Operator
 To install Kronos-Core, you need to apply the necessary Kubernetes manifests to your cluster.
 ```bash
-kubectl apply -f https://github.com/KronosOrg/kronos-core/releases/download/v0.2.0/kronos-core-0.2.0.yaml
+kubectl apply -f https://github.com/KronosOrg/kronos-core/releases/download/v0.3.0/kronos-core-0.3.0.yaml
 ```
 # Kronos-CLI
 
