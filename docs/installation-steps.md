@@ -1,6 +1,14 @@
 ---
 sidebar_position: 3
 ---
+# Dependencies
+
+Starting from version `v0.4.0`, the installation of Kronos requires the following packages:
+
+- **cert-manager** (required): Handles the management of TLS certificates of Webhooks.
+- **Prometheus and Grafana Stack** (optional, for visualizing metrics): Use Prometheus for collecting metrics and Grafana for visualizing them.
+
+You can find the Kronos Helm chart on Artifact Hub for both the [cert-manager](https://artifacthub.io/packages/helm/cert-manager/cert-manager) and the [Prometheus Grafana Stack](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack) packages.
 
 # Installation Steps
 This section will guide you through the installation of both Kronos-Core, the Kubernetes Operator, and Kronos-CLI, the command-line interface for Kronos.
