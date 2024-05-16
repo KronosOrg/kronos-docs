@@ -42,7 +42,7 @@ metrics:
 - Install the operator:
 Use the following command to install the operator with your custom values:
 ```bash
-helm install <release-name> kronos-core/kronos-core --create-namespace true --namespace <installation-namespace> --version 0.4.0 -f values.yaml
+helm install <release-name> kronos-core/kronos-core --create-namespace true --namespace <installation-namespace> --version 0.4.1 -f values.yaml
 ```
 :::note 
 **values to replace**
@@ -51,7 +51,7 @@ helm install <release-name> kronos-core/kronos-core --create-namespace true --na
 - values.yaml: Replace this with the path to your custom values file, if you have any. This file contains the values that you want to override from the default Helm chart values.
 example: 
 ```
-helm install my-kronos-core kronos-core/kronos-core --create-namespace true --namespace kronos-system --version 0.3.2 -f custom_values.yaml
+helm install my-kronos-core kronos-core/kronos-core --create-namespace true --namespace kronos-system --version 0.4.1 -f custom_values.yaml
 ```
 :::
 
