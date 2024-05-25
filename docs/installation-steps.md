@@ -1,7 +1,8 @@
 ---
 sidebar_position: 3
 ---
-# Dependencies
+# Installation Steps
+## Dependencies
 
 Starting from version `v0.4.0`, the installation of Kronos requires the following packages:
 
@@ -10,16 +11,16 @@ Starting from version `v0.4.0`, the installation of Kronos requires the followin
 
 You can find the Kronos Helm chart on Artifact Hub for both the [cert-manager](https://artifacthub.io/packages/helm/cert-manager/cert-manager) and the [Prometheus Grafana Stack](https://artifacthub.io/packages/helm/prometheus-community/kube-prometheus-stack) packages.
 
-# Installation Steps
+## Installation Steps
 This section will guide you through the installation of both Kronos-Core, the Kubernetes Operator, and Kronos-CLI, the command-line interface for Kronos.
-# Kronos-Core: Operator
-## Using Release Files
+## Kronos-Core: Operator
+### Using Release Files
 
 To install Kronos-Core, you need to apply the necessary Kubernetes manifests to your cluster.
 ```bash
 kubectl apply -f https://github.com/KronosOrg/kronos-core/releases/download/v0.4.0/kronos-core-0.4.0.yaml
 ```
-## Using Helm 
+### Using Helm 
 [Helm](https://helm.sh/) is a package manager for Kubernetes that simplifies the deployment and management of applications. To install the operator using a Helm chart, follow these steps:
 
 - Add the Helm repository:
@@ -92,12 +93,12 @@ helm uninstall <release-name>
 
 
 
-# Kronos-CLI
+## Kronos-CLI
 
 To install Kronos-CLI, you can download the binary for your operating system from the Kronos repository.
 - Download the Kronos-CLI binary from the Kronos repository releases page:
 ```bash
-curl -LO https://github.com/KronosOrg/kronos-cli/releases/download/v1.0.0/kronos-cli 
+curl -LO https://storage.cloud.google.com/kronos-cli/$(curl -L -s https://storage.googleapis.com/kronos-cli/stable.txt)/kronos-cli
 ```
 - Make the binary executable (Linux/macOS):
 ```bash

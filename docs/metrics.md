@@ -1,11 +1,12 @@
 ---
 sidebar_position: 7
 ---
+# Metrics
+
 :::tip 
 The screenshots of the metrics visualizations provided in this documentation are taken from Kronos' own Grafana dashboard, **KronosBoard**. If you want a powerful and user-friendly way to manage and monitor your Kronos deployment, we highly recommend visiting and using [KronosBoard](https://grafana.com/grafana/dashboards/21068-kronosboard/).
 :::
 
-# Metrics
 ## Default Controller Metrics
 
 Controller Runtime, a part of the Kubebuilder framework, exports several default metrics that offer insights into the performance and behavior of controllers. 
