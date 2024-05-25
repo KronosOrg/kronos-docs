@@ -18,7 +18,7 @@ This section will guide you through the installation of both Kronos-Core, the Ku
 
 To install Kronos-Core, you need to apply the necessary Kubernetes manifests to your cluster.
 ```bash
-kubectl apply -f https://github.com/KronosOrg/kronos-core/releases/download/v0.4.0/kronos-core-0.4.0.yaml
+kubectl apply -f https://github.com/KronosOrg/kronos-core/releases/download/v0.4.1/kronos-core-0.4.1.yaml
 ```
 ### Using Helm 
 [Helm](https://helm.sh/) is a package manager for Kubernetes that simplifies the deployment and management of applications. To install the operator using a Helm chart, follow these steps:
