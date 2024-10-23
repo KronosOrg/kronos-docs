@@ -95,11 +95,26 @@ helm uninstall <release-name>
 
 ## Kronos-CLI
 
-To install Kronos-CLI, you can download the binary for your operating system from the Kronos repository.
+To install Kronos-CLI, you can download the appropriate binary for your operating system and architecture from the Kronos repository.
 - Download the Kronos-CLI binary from the Kronos repository releases page:
-```bash
-curl -LO https://storage.googleapis.com/kronos-cli/$(curl -L -s https://storage.googleapis.com/kronos-cli/stable.txt)/kronos-cli
-```
+  
+  - Linux (x86_64):
+  ```bash
+  curl -LO https://storage.googleapis.com/kronos-cli/$(curl -L -s https://storage.googleapis.com/kronos-cli/stable.txt)/linux/kronos-cli
+  ```
+
+  - MacOS (Intel):
+  ```bash
+  curl -LO https://storage.googleapis.com/kronos-cli/$(curl -L -s https://storage.googleapis.com/kronos-cli/stable.txt)/mac/kronos-cli
+  ```
+  - MacOS (M series):
+  ```bash
+  curl -LO https://storage.googleapis.com/kronos-cli/$(curl -L -s https://storage.googleapis.com/kronos-cli/stable.txt)/mac-arm64/kronos-cli
+  ```
+  - Windows:
+  ```bash
+  curl.exe -LO https://storage.googleapis.com/kronos-cli/$(curl.exe -L -s https://storage.googleapis.com/kronos-cli/stable.txt)/windows/kronos-cli.exe
+  ```
 - Make the binary executable (Linux/macOS):
 ```bash
 chmod +x kronos-cli
